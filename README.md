@@ -1,5 +1,6 @@
 A module to reduce the boilerplate required for quick scripts. Before:
 
+```python
     """
     Usage: test.py [--verbose] [-h] <arg1>
     
@@ -22,9 +23,11 @@ A module to reduce the boilerplate required for quick scripts. Before:
     
     if __name__ == '__main__':
         sys.exit(main())
+```
 
 After:
 
+```python
     """
     Usage: test.py [--verbose] [-h] <arg1>
     
@@ -35,6 +38,7 @@ After:
 
     def main(args):
         do_stuff_with_args(args)
+```
 
 This module will automatically import the following modules:
 * os
